@@ -1,0 +1,7 @@
+axes = pd.plotting.scatter_matrix(df, alpha=0.2, figsize=(20,10))
+for ax in axes.flatten():
+    ax.xaxis.label.set_rotation(90)
+    ax.yaxis.label.set_rotation(0)
+    ax.yaxis.label.set_ha('right')
+
+plt.show()
